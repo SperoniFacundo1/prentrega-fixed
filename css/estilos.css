@@ -1,11 +1,22 @@
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0 ;
+	box-sizing: border-box;
+}
+
 .icon {
 	width: 200px;
+	position:relative;
+	left: 10px;
 }
 
 
 .nav {
 	margin-left: auto;
 }
+
 
 
 .ul {
@@ -56,29 +67,24 @@
 	text-decoration: none solid rgb(17, 17, 17);
 	word-spacing: 0px;
 	text-indent: -1em;
-	display: grid;
-	grid-area: slogan;
+	display: flex;
+	flex-direction:row;
 	background-color:#111111;
 
-	height:281.469px ;
-	width: 1142.39px ;
-	margin: 94px 0 118px 0;
-	padding: 17px 17px 17px 40px ;
+	height:581.469px ;
+	width: 1600px ;
+	margin: 94px 0 0 0;
+	padding: 20px 1px 157px 30px ;
 	min-height:245.22px;
-	grid-auto-rows: minmax(0px, auto);
-	grid-gap: .5rem;
+
 
 }
 
 .video {
-	display:grid;
-	grid-area: video;
+	display:flex;
 	max-width: 700px;
 	padding: 0px;
 	margin: 0 auto;
-	grid-template-columns: 200px 200px 200px 200px;
-	grid-template-rows: 200px 200px 200px;
-	grid-gap: 1rem;
 	justify-items: end;
 	height: 358px;
 	
@@ -102,7 +108,7 @@
 
 
 	background-attachment: scroll;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: white;
 	background-image: none;
 	background-position: 0px 0px;
 	background-repeat: repeat;
@@ -137,8 +143,35 @@
 	list-style: none;
 }
 
+nav{
+	display: flex;
+	justify-content: space-around;
+}
+
+a:after {
+	content: "";
+	position: absolute;
+	background-color: #111111;
+	height: 3px;
+	width: 100%;
+	justify-content: space-between;
+	left: 0;
+	bottom: -10px;
+	transition: 0.3s;
+}
+
+a:hover {
+	color: #111111;
+}
+
+a:hover:after{
+	width:100px;
+}
+
+
 .estilolista{
 	list-style: none;
+	background-color: white;
 
 }
 #section {
@@ -156,13 +189,25 @@
 	text-transform: lowercase;
 	word-spacing: 0px;
 	text-indent: 1em;
+	position:relative;
+	left: 2px;
+	margin-bottom: 10px;
 	
 	display: block;
 	box-sizing: border-box;
 	background-color: #111111;
 	height: 60px;
-	margin: 0 auto;
-	width: 1142.39;
+	margin-top: 50px;
+}
+
+
+.ind {
+	height: 450px;
+	margin: 150px;
+}
+
+.ind:hover {
+	filter: opacity();
 }
 
 .nos {
@@ -195,12 +240,15 @@
 	text-transform: lowercase;
 	word-spacing: 0px;
 	text-indent: 1em;
+	position:relative;
+	left: 10px;
 	
-	display: block;
+	display: flex;
 	background-color: #111111;
 	height: 300px;
 	width: 1142.39;
-	margin: 0 0 40px 0;
+	margin: 0 0 150px 0;
+	margin-top: 10px;
 }
 
 .solutions {
@@ -225,15 +273,41 @@
 	word-spacing: 0px;
 	text-indent: 1em;
 	text-align: left;
-	
+	position:relative;
+	left: 11px;
+
+	animation-duration: 3s;
+	animation-name: slidein;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 
+.slidein {
+	animation-duration: 3s;
+	animation-name: slidein;
+	animation-iteration-count: 3;
+	animation-direction: alternate;
+}
+
+@keyframes slidein {
+	from {
+	margin-left:100%;
+	width:300%
+	}
+
+	to {
+	margin-left:0%;
+	width:100%;
+}
+}
+
+	
 
 #main_block {
-
 	background-color: #FFFFFF;
-	display: block;
+	display: flex;
 	padding: top 1000px;
+	height: 500px;
 	margin-bottom: 100px;
 
 	font-family: "Helvetica Neue", sans-serif;
@@ -251,10 +325,10 @@
 }
 
 #cs {
-	display: inline-block;
+	display: flex;
 	margin: 15px auto;
 	font-size: 20px;
-	padding: 15px;
+	padding: 48px;
 	font-family: "Helvetica Neue", sans-serif;
 }
 
@@ -264,7 +338,7 @@
 	font-style: normal;
 	font-variant: normal;
 	color: white;
-	
+	display:flex;
 
 	height: 42px;
 	width: 146.391px;
@@ -276,6 +350,11 @@
 
 #boxpick  {
 	background-color: #EDEDED;
+	width: 1550px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
 }
 
 .boxe {
@@ -348,4 +427,49 @@
 	display:flex;
 	grid-area: header;
 }
+/*Hoover efect 2*/
+
+.b {
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	height:350px;
+}
+
+.boxs {
+	color: #ededed;
+	background-color: #111;
+	height:350px;
+	width: 350px;
+	margin: 40px;
+	display: flex;
+	border: 5px solid white;
+	text-align: center;
+	justify-content: space-evenly;
+	justify-items: center;
+	font-family: "Helvetica Neue", sans-serif;
+}
+
+.b .boxs {
+	transition: 0.3s ease-in-out;
+
+}
+
+.b .boxs:hover {
+    height: 465px;
+}
+
+
+.b .boxs .content {
+    transition: 0.3s ease-in-out;
+}
+.b .boxs:hover {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+/** Gltich effect **/
+
 
