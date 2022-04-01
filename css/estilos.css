@@ -78,14 +78,17 @@ html{
 	display: flex;
 	flex-direction:row;
 	background-color:#111111;
-
 	height:581.469px ;
 	width: 1600px ;
 	margin: 94px 0 0 0;
 	padding: 20px 1px 157px 30px ;
 	min-height:245.22px;
+}
 
-
+.slog {
+	position:relative;
+	left:25px;
+	font-size: 22px;
 }
 
 .video {
@@ -95,6 +98,8 @@ html{
 	margin: 0 auto;
 	justify-items: end;
 	height: 358px;
+	position: relative;
+	left: 10px;
 	
 }
 
@@ -483,8 +488,6 @@ a:hover:after{
     transition-delay: 0.3s;
 }
 
-/** Gltich effectsss **/
-
-/**release note **/
+/** Gltich effectss **/
 
 
