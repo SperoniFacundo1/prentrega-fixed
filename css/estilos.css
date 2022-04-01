@@ -450,6 +450,8 @@ a:hover:after{
 	flex-wrap:nowrap;
 	height:350px;
 	position: relative;
+	margin:10px;
+	right: 10px;
 }
 
 
