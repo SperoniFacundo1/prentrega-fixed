@@ -460,7 +460,9 @@ a:hover:after{
 	color: #ededed;
 	background-color: #111;
 	height:350px;
-	width: 330px;
+	width: 250px;
+	position:relative;
+	left: 150px;
 	margin: 35px;
 	display: flex;
 	border: 5px solid white;
