@@ -1,20 +1,18 @@
-.body {
-	margin:0;
-}
+html{
+	white-space:nowrap;
+	}
+	body {
+	display:inline-block;
+	overflow-x: hidden
+	}
 
-
-.icon {
-	width: 200px;
-	display: flex
-}
-
-.header {
-	display: inline-flex;
-	align-items: center;
-	flex-wrap:wrap;
-	justify-content: space-between;
-	max-width: 100%;
-}
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0 ;
+	box-sizing: border-box;
+}	
 
 #ul {
 	font-family: "Helvetica Neue", sans-serif;
@@ -40,16 +38,30 @@
 
 	height: 103px;
 	margin: 0 60px 0 auto;
-	position: relative;
+	position: static;
 	top: auto;
 	bottom: auto;
 	right: auto;
-	left: 50px;
+	left: auto;
 	display: flex;
 	align-items: center;
     flex-flow: row nowrap;
     justify-content: center;
 	clear: none;
+}
+
+.icon {
+	width: 200px;
+}
+
+.header {
+	display: inline-flex;
+	align-items: center;
+	width: 100%;
+}
+
+.nav {
+	margin-left: auto;
 }
 
 .navigator {
@@ -94,14 +106,16 @@
 
 
 	position: relative;
-
-	left: 500px;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
 	display: inline-block;
-}
-
-.estilolista{
+    padding-left: 3px;
+    padding-right: 3px;
+	clear: none;
+	z-index: auto;
 	list-style: none;
-
 }
 
 .estilolista{
@@ -180,22 +194,9 @@
 
 }
 
-.button {
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	height:100px;
-}
-
 .special {
     text-align: center;
-	display:flex;
-	align-items: center;
-	background: #111111;
-	color: white;
 }
-
-
 
 #footer {
 	background-color: #000000;
@@ -224,5 +225,3 @@
 	text-indent: 1em;
 
 }
-
-

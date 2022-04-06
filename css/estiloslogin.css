@@ -41,11 +41,11 @@
 
 	height: 103px;
 	margin: 0 60px 0 auto;
-	position: static;
+	position: relative;
 	top: auto;
 	bottom: auto;
 	right: auto;
-	left: auto;
+	left: 50px;
 	display: flex;
 	align-items: center;
     flex-flow: row nowrap;

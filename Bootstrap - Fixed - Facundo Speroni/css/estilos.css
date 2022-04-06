@@ -48,13 +48,14 @@ html{
 	background-repeat: repeat;
 	color: rgb(17, 17, 17);
 
+
 	height: 103px;
 	margin: 0 60px 0 auto;
-	position: relative;
+	position: static;
 	top: auto;
 	bottom: auto;
 	right: auto;
-	left: 100px;
+	left: auto;
 	display: flex;
 	align-items: center;
     flex-flow: row nowrap;
@@ -437,7 +438,7 @@ a:hover:after{
 }
 */
 
-#headerr {
+#header {
 	display:flex;
 	grid-area: header;
 }

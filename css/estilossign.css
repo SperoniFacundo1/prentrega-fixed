@@ -12,6 +12,16 @@
 	margin-left: auto;
 }
 
+.ph {
+	display:flex;
+	flex-direction: row-reverse;
+}
+
+.phone {
+	display:flex;
+
+}
+
 #ul {
 	font-family: "Helvetica Neue", sans-serif;
 	font-size: 16px;
@@ -36,11 +46,11 @@
 
 	height: 103px;
 	margin: 0 60px 0 auto;
-	position: static;
+	position: relative;
 	top: auto;
 	bottom: auto;
 	right: auto;
-	left: auto;
+	left: 50px;
 	display: flex;
 	align-items: center;
     flex-flow: row nowrap;
@@ -190,10 +200,12 @@
 
 }
 
-.buttons {
+#buttons {
     display: inline-block;
     text-align: center;
-    margin-top:-10px
+    margin-top:-10px;
+	background-color: rgba(17, 17, 17);
+	color: white;
 }
 
 
