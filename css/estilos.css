@@ -2,7 +2,8 @@ html {
   white-space: nowrap; }
   html body {
     display: inline-block;
-    margin: 10%;
+    margin: 10;
+    zoom: 90%;
     overflow-x: hidden; }
   html *,
   html *:before,
