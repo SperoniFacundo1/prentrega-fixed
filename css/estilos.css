@@ -2,6 +2,7 @@ html {
   white-space: nowrap; }
   html body {
     display: inline-block;
+    margin: 10%;
     overflow-x: hidden; }
   html *,
   html *:before,

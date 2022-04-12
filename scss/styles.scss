@@ -1,9 +1,12 @@
 @import "footer";
 @import "variables";
+
+
 html{
 	white-space:nowrap;
 	body {
 	display:inline-block;
+    margin:10%;
 	overflow-x: hidden
 	}
 
