@@ -1,0 +1,38 @@
+.title  {
+    color: x;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+.title-concepth {
+    display:block;
+    opacity: 0.5;
+    animation: revealText .5s forwards;
+}
+.title-second {
+    animation-delay: .175s;
+}
+.title-fourth {
+    animation-delay: .325s;
+}
+
+@keyframes revealText {
+    from {
+        transform:translateY(20px);
+    }
+    to {
+        opacity:1;
+        transform: none;
+    }
+}
+
+
+/* HTML:
+
+<h1 class="title">
+    <span class="title-content">Shoot</span>
+    <span class="title-content title-second>your shot.</span>
+    <span class="title-content title-third">You will always</span>
+    <span class="title-content title-fourth">miss if you don't.</span>
+</h1>
+
+*/
