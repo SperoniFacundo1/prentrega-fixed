@@ -4,6 +4,7 @@
 
 html{
 	white-space:nowrap;
+}
 	body {
 	display:inline-block;
     margin:10;
@@ -111,6 +112,8 @@ html{
 
 .nav {
 	margin-left: auto;
+	position: relative;
+	right: 200px;
 }
 
 
@@ -142,7 +145,7 @@ html{
 	top: auto;
 	bottom: auto;
 	right: auto;
-	left: 100px;
+	left: -30px;
 	display: flex;
 	align-items: center;
     flex-flow: row nowrap;
@@ -247,7 +250,7 @@ nav{
 	display: flex;
 	justify-content: space-around;
 	position:relative;
-	right: 90px;
+	right: 100px;
 }
 
 a:after {
@@ -359,28 +362,28 @@ a:hover:after{
 	height: 300px;
 	width: 1142.39;
 	margin: 0 0 40px 0;
-}
+        & h1 {
+            font-family: $letraPrincipal;
+            font-size: 30px;
+            font-weight: 700;
+            color: #111111;
+            letter-spacing: -0.09616px;
+            line-height: 60px;
+            text-transform: lowercase;
+            word-spacing: 0px;
+            text-indent: 1em;
+            text-align: left;
+            position:relative;
+            left: 11px;
+        
+            animation-duration: 3s;
+            animation-name: slidein;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    }
 
 
-.destacado {
-	font-family: $letraPrincipal;
-	font-size: 30px;
-	font-weight: 700;
-	color: #111111;
-	letter-spacing: -0.09616px;
-	line-height: 60px;
-	text-transform: lowercase;
-	word-spacing: 0px;
-	text-indent: 1em;
-	text-align: left;
-	position:relative;
-	left: 11px;
-
-	animation-duration: 3s;
-	animation-name: slidein;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
 
 .slidein {
 	animation-duration: 3s;
@@ -393,12 +396,12 @@ a:hover:after{
 	from {
 	margin-left:320px;
 	width:60px;
-	    &to {
+    }to {
 	    margin-left:80px;
 	    width:100px;
         }
     }
-}
+
 
 	
 
@@ -719,4 +722,4 @@ a:hover:after{
     opacity: 1;
     margin-top: -40px;
     transition-delay: 0.3s;
-}}
+}
