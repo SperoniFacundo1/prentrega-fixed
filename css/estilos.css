@@ -3,9 +3,7 @@ html {
 
 body {
   display: inline-block;
-  overflow-x: hidden;
-  margin:10;
-  zoom:90%; }
+  overflow-x: hidden; }
 
 *,
 *:before,
@@ -429,6 +427,7 @@ body {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 16px;
   font-style: normal;
+  zoom: 105%;
   font-variant: normal;
   font-weight: 400;
   letter-spacing: normal;
