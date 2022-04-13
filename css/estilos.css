@@ -331,10 +331,11 @@ a:hover:after {
 html {
   white-space: nowrap; }
 
-body {
+#body {
   display: inline-block;
-  margin: 10;
   zoom: 90%;
+  padding: 0 auto;
+  margin: 0 auto;
   overflow-x: hidden; }
 
 *,
