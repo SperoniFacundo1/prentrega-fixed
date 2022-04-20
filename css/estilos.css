@@ -40,7 +40,7 @@ body {
   position: relative;
   left: 80px; }
 
-nav {
+nav, .nav {
   display: flex;
   justify-content: space-around;
   position: relative;
@@ -328,14 +328,22 @@ a:hover:after {
   word-spacing: 0px;
   text-indent: 1em; }
 
+.nav {
+  margin-left: auto;
+  position: relative;
+  display: flex;
+  right: 100px; }
+
 html {
   white-space: nowrap; }
 
 #body {
   display: inline-block;
   zoom: 90%;
-  padding: 0 auto;
-  margin: 0 auto;
+  margin-left: 0px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 10px;
   overflow-x: hidden; }
 
 *,
@@ -423,6 +431,11 @@ html {
   margin-left: auto;
   position: relative;
   right: 200px; }
+
+nav, .nav {
+  display: flex;
+  justify-content: space-around;
+  right: 100px; }
 
 .ul {
   font-family: "Helvetica Neue", sans-serif;
@@ -537,12 +550,6 @@ html {
   clear: none;
   z-index: auto;
   list-style: none; }
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  right: 100px; }
 
 a:after {
   content: "";
@@ -728,15 +735,13 @@ a:hover:after {
   border-bottom: #00C8FF; }
 
 #footer {
-  background-color: #000000;
+  background-color: #111111;
   display: flex;
   align-items: flex-end;
-  background-color: #111111;
   flex-direction: row-reverse;
   height: 400px;
   width: 1142.39;
-  margin-top: 100px;
-  display: auto; }
+  margin-top: 100px; }
 
 .foot {
   font-family: "Helvetica Neue", sans-serif;
@@ -749,9 +754,7 @@ a:hover:after {
   text-decoration: none solid white;
   text-transform: lowercase;
   word-spacing: 0px;
-  text-indent: 1em;
-  position: relative;
-  right: 15px; }
+  text-indent: 1em; }
 
 #headerr {
   display: inline-flex;

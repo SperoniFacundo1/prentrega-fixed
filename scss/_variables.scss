@@ -6,12 +6,43 @@ $letraPrincipal: "Helvetica Neue", sans-serif;
 
 
 
+$mainFooter : (
+	display-footer: flex,
+	items-items:flex-end,
+	background-footer: #111111,
+	direccion:row-reverse,
+	altura-footer: 400px,
+	ancho-footer: 1142.39,
+	margen-footer: 100px,
+) ;
 
+$estiloFooter : (
+    font-family: "Helvetica Neue" sans-serif,
+    display-estilos-footer: flex,
+    color-estilos-footer: #EDEDED,
+    font-weight-footer: 700,
+    color-text-footer: white,
+    letter-spacing-footer: -0.09616px,
+    position-footer: relative,
+    right-footer: 10px,
+    line-height-footer: 60px,
+    text-decoration-footer: none solid white,
+    text-transform-footer: lowercase,
+    word-spacing-footer: 0px,
+    position-estilos-footer:relative,
+    text-indent-footer: 1em
+);
 
+.nav {
+    margin-left: auto;
+    position: relative;
+    @extend nav;
+    display:flex;
+    right: 100px;
+}
 
-
-
-
-
-
-
+@mixin header($display,$align-items,$width,$height){
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    height: 100%; }

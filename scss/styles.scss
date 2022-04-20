@@ -8,8 +8,10 @@ html{
 	#body {
 	display:inline-block;
     zoom:90%;
-	padding:0 auto;
-	margin:0 auto;
+	margin-left: 0px;
+	margin-right: 10px;
+	margin-top: 0px;
+	margin-bottom: 10px;
 	overflow-x: hidden
 	}
 
@@ -117,7 +119,11 @@ html{
 	right: 200px;
 }
 
-
+nav{
+	display: flex;
+	justify-content: space-around;
+	right: 100px;
+}
 
 .ul {
 	font-family: $letraPrincipal;
@@ -248,12 +254,6 @@ html{
 	list-style: none;
 }
 
-nav{
-	display: flex;
-	justify-content: space-around;
-	position:relative;
-	right: 100px;
-}
 
 a:after {
 	content: "";
@@ -478,34 +478,30 @@ a:hover:after{
 }
 
 #footer {
-	background-color: #000000;
-	display: flex;
-	align-items:flex-end;
-	background-color: #111111;
-	flex-direction:row-reverse;
-	height: 400px;
-	width: 1142.39;
-	margin-top: 100px;
-	display: auto;
-	
+	background-color: map-get($mainFooter,background-footer);
+	display: map-get($mainFooter,display-footer);
+	align-items:map-get($mainFooter,items-items);
+	flex-direction:map-get($mainFooter,direccion);
+	height:map-get($mainFooter,altura-footer);
+	width: map-get($mainFooter,ancho-footer);
+	margin-top: map-get($mainFooter,margen-footer);
 }
 
 
 .foot {
 	font-family: $letraPrincipal;
-	display: flex;
-	color:#EDEDED;
-	font-weight: 700;
-	color: white;
-	letter-spacing: -0.09616px;
-	line-height: 60px;
-	text-decoration: none solid rgb(255, 255, 255);
-	text-transform: lowercase;
-	word-spacing: 0px;
-	text-indent: 1em;
-    position:relative;
-    right:15px;
-
+	display: map-get($estiloFooter,display-estilos-footer);
+	position:map-get($estiloFooter,postion-estilos-footer);
+	color:map-get($estiloFooter,color-estilos-footer);
+	font-weight:map-get($estiloFooter,font-weight-footer);
+	color:map-get($estiloFooter,color-text-footer);
+	letter-spacing:map-get($estiloFooter,letter-spacing-footer);
+	line-height:map-get($estiloFooter,line-height-footer);
+	text-decoration: map-get($estiloFooter,text-decoration-footer);
+	text-transform: map-get($estiloFooter,text-transform-footer);
+	word-spacing:map-get($estiloFooter,word-spacing-footer);;
+	text-indent: map-get($estiloFooter,text-indent-footer);
+    right:map-get($estiloFooter,rigth-footer);
 }
 
 #headerr {
@@ -725,3 +721,5 @@ a:hover:after{
     margin-top: -40px;
     transition-delay: 0.3s;
 }
+
+
